@@ -93,3 +93,10 @@ def FormView(request):
         context ={}
         context['form']= InputForm()
         return render(request, "form.html", context)
+
+def SelectMyClass(request):
+    data = MyClass.objects.all()
+    list = {
+        "myclass_list": data
+    }
+    return render(request,"myclass.html", list)

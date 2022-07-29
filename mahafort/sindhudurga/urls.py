@@ -8,4 +8,5 @@ urlpatterns = [
     re_path(r'^contactus/$', views.ContactUsPageView.as_view(), name='contactus'),
     path('staticstring', views.PlainText,name='staticstring'),
     path('form', views.FormView,name='form'),
+    path('myclass_list', views.SelectMyClass,name='list'),
 ]
